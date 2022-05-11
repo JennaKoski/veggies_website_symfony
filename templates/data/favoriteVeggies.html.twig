@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<div id="favorite">
+<h1>Favorite veggies</h1>
+<ul>
+{% for veggie in veggies %}
+
+<li>{{veggie}}</li>
+{% endfor %}
+</ul>    
+</div>
+
+{% endblock %}
